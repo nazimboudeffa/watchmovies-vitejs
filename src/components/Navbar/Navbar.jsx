@@ -10,7 +10,7 @@ import {
 import { Toaster } from "react-hot-toast";
 
 import { useToast } from "../../contexts";
-import "./navbar.css";
+//import "./navbar.css";
 const Navbar = () => {
   const navigate = useNavigate();
   const { notifySuccess, notifyError } = useToast();
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const navbarStyleChange = () => {
     if (window.scrollY > 20) {
-      setNavbarStyle("col-black solid");
+      setNavbarStyle("bg-zinc-900");
     } else {
       setNavbarStyle("");
     }
@@ -49,33 +49,23 @@ const Navbar = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
 
       <nav
-        className={`nav navbar-fixed flex flex-wrap flex-between  navbar-bg nav-zindex fixed-top ${navbarStyle}`}
-        id="navbar"
+        className={`flex justify-between px-10 py-5 items-center bg-zinc-500 sticky top-0 z-10 ${navbarStyle}`}
       >
-        <div className="flex flex-space-evenly flex-align-item-center ">
-          <ul className=" text-deocration-none flex flex-wrap flex-align-item-center gap">
-            <li className="pb-1 nav-text flex flex-align-item-center gap-1 hide">
-              <span className="material-icons snackbar-icons  navbar-icons">
-                menu
-              </span>
-            </li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "actives list-style-none"
-                  : "inactives list-style-none"
-              }
-            >
-              <li className="pb-1  flex flex-align-item-center gap-1">
-                <span className="font-bold label-text ">Bled+</span>
-              </li>
-            </NavLink>
-          </ul>
-        </div>
 
-        <div className="flex flex-space-evenly flex-align-item-center ">
-          <ul className=" text-deocration-none flex flex-wrap gap-col-2">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "actives list-style-none"
+              : "inactives list-style-none"
+          }
+        >
+          <h1 class="text-xl text-white font-bold">Bled+</h1>
+        </NavLink>
+
+
+        <div className="flex items-center text-white">
+          <ul className="flex items-center  space-x-6">
             <NavLink
               to="/movies"
               className={({ isActive }) => (isActive ? "actives" : "inactives")}

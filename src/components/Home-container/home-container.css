@@ -4,7 +4,6 @@
   --btn-bg: rgba(37, 36, 36, 0.493);
 }
 .header {
-  background-color: var(--col-black);
   height: 110vh;
   min-height: 25rem;
   width: 100%;
@@ -30,7 +29,7 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
+  z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);

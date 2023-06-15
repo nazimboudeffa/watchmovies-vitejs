@@ -15,7 +15,7 @@ const HomeContainer = () => {
   return (
     <section className="header">
       <div className="overlay"></div>
-      <video autoPlay={true} ref={videoElement} playsInline muted>
+      <video autoPlay={true} ref={videoElement} playsInline muted loop>
         <source
           src="https://res.cloudinary.com/daemrjn5v/video/upload/v1686775948/videos/Charlie_Chaplin_-_Modern_Times_Trailer_ykawjd.mp4"
           type="video/mp4"
