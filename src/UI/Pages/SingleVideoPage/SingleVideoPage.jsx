@@ -32,7 +32,7 @@ const SingleVideoPage = () => {
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
 
-      <main className="flex video-container mb-3">
+      <main className="flex flex-col mb-3">
         <div className="flex-7">
           <VideoData>
             <VideoPlayer />

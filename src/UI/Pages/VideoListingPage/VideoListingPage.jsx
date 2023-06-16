@@ -42,7 +42,7 @@ const VideoListingPage = () => {
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
       <main className="mt-3">
-        <section className="video-lists-container flex flex-wrap gap ">
+        <section className="video-lists-container flex flex-wrap gap-3">
           <button
             className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills "
             onClick={() => {
@@ -81,7 +81,7 @@ const VideoListingPage = () => {
           </button>
         </section>
         <section>
-          <div className="flex flex-wrap gap pb-3 flex-justify-center">
+          <div className="flex flex-wrap gap-3 pb-3 justify-center">
             <VideoListing VIDEOS={filterVideos(videos)(videoCategory)} />
           </div>
         </section>
@@ -90,13 +90,13 @@ const VideoListingPage = () => {
             <div className="flex flex-between">
               <div>
                 <span className="font-bold label-text label-text-dark">
-                  Mustwatch
+                  Must watch
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-wrap gap pb-3 flex-justify-center mt-2">
+          <div className="flex flex-wrap gap-3 pb-3 justify-center mt-2">
             <MustWatch />
           </div>
         </section>

@@ -83,7 +83,7 @@ const LikeVideos = () => {
         <>
           <div className="flex flex-column flex-align-item-center">
             <img
-              src="https://res.cloudinary.com/dwhsfh3sc/image/upload/v1648998454/zeplin-movies/movie-assets-imgs/Film_rolls-rafiki_1_xvlluh.svg"
+              src="undraw_movie_night_re_9umk.png"
               alt="No-likes-video-found"
               className="likevideo-404"
             />
