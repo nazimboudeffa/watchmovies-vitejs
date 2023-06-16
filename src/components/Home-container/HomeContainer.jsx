@@ -14,29 +14,27 @@ const HomeContainer = () => {
   };
   return (
     <section>
-      <video autoPlay={true} ref={videoElement} playsInline muted loop className="w-full h-full z-[-1]">
+      <video autoPlay={true} ref={videoElement} playsInline muted loop className="relative w-full h-full z-[-1]">
         <source
           src="https://res.cloudinary.com/daemrjn5v/video/upload/v1686775948/videos/Charlie_Chaplin_-_Modern_Times_Trailer_ykawjd.mp4"
           type="video/mp4" />
       </video>
 
       <div className="absolute top-0 mt-[calc(5rem+3rem)] ml-7">
-        <div className="w-100">
+        <div className="w-10 sm:w-20 md:w-30 lg:w-40 xl:w-50">
           <img
             src="https://res.cloudinary.com/daemrjn5v/image/upload/v1686776512/posters/Charlie_Chaplin_-_Modern_Times_h0ojon.jpg"
             alt="modern-times" />
         </div>
-        <div className="mt-2 ml-3 flex flex-col gap-3 text-white">
-          <div className="flex flex-row flex-align-item-center flex-justify-item-center gap">
-            <h1 className="text-white font-bold font-sm">Modern Times</h1>
-            <button className=" pl-04 pr-04 pt-03 pb-03 movie-rating-btn">
-              <span className="font-ex-sm">13+</span>
-            </button>
+        <div className="mt-5 flex flex-col gap-3 text-white">
+          <div className="flex flex-row gap-3">
+            <h1 className="font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Modern Times</h1>
+            <div className="border-red-500 border-solid rounded text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
           </div>
-          <p className="text-white ">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-50">
             Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker in this wonderful almost completely silent comedy.
           </p>
-          <div className="flex flex-row gap">
+          <div className="flex flex-row gap-3">
             <button
               className="play-btn btn btn-sm flex flex-align-item-center"
               title="Feature not available "
