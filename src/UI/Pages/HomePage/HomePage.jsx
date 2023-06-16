@@ -2,6 +2,7 @@ import React from "react";
 import { HomeContainer } from "../../../components";
 import "./homepage.css";
 import { Toaster } from "react-hot-toast";
+import Footer from "../../../components/Footer";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <main>
         <HomeContainer />
       </main>
+      <Footer />
     </>
   );
 };

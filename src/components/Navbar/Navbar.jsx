@@ -46,10 +46,10 @@ const Navbar = () => {
 
   return (
     <>
-      <Toaster position="bottom-center" reverseOrder={false} />
-
+    <Toaster position="bottom-center" reverseOrder={false} />
+    <header className={`bg-tranparent sticky top-0 z-90 ${navbarStyle}`}>
       <nav
-        className={`flex justify-between px-10 py-5 items-center bg-tranparent sticky top-0 z-90 ${navbarStyle}`}
+        className="flex justify-between px-10 py-5 items-center"
       >
 
         <NavLink
@@ -125,6 +125,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      </header>
     </>
   );
 };
