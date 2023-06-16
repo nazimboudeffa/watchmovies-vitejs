@@ -26,9 +26,9 @@ const VideoPlayer = () => {
   }, [addVideoToHistory]);
 
   return (
-    <div className="video-player mt-3">
+    <div className="w-full h-full">
       <iframe
-        className="video-player"
+        className="w-full h-screen"
         src={`https://www.youtube.com/embed/${watchId.id}`}
         title="YouTube video player"
         frameBorder="0"

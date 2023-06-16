@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   VideoPlayer,
-  VideoDescription,
-  VideoListing,
+  VideoDescription
 } from "../../../components/";
 
 import { VideoData } from "../../../contexts/single-video-page/VideoDataContext";
@@ -39,12 +38,6 @@ const SingleVideoPage = () => {
 
             <VideoDescription />
           </VideoData>
-        </div>
-        <div className="flex-3 ">
-          <div className="flex flex-wrap gap pb-3 flex-justify-center mt-2">
-            {/* card starts here */}
-            <VideoListing VIDEOS={videos} />
-          </div>
         </div>
       </main>
     </>
