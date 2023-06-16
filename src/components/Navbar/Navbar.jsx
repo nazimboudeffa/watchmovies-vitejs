@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const navbarStyleChange = () => {
     if (window.scrollY > 20) {
-      setNavbarStyle("bg-zinc-900");
+      setNavbarStyle("bg-zinc-900 text-white");
     } else {
       setNavbarStyle("");
     }
@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <>
     <Toaster position="bottom-center" reverseOrder={false} />
-    <header className={`bg-tranparent sticky top-0 z-90 ${navbarStyle}`}>
+    <header className={`bg-tranparent sticky top-0 z-10 ${navbarStyle}`}>
       <nav
         className="flex justify-between px-10 py-5 items-center"
       >
@@ -60,11 +60,11 @@ const Navbar = () => {
               : "inactives list-style-none"
           }
         >
-          <h1 class="text-xl text-zinc-300 font-bold">Bled+</h1>
+          <h1 class="text-xl font-bold">Bled+</h1>
         </NavLink>
 
 
-        <div className="flex items-center text-zinc-300">
+        <div className="flex items-center">
           <ul className="flex items-center  space-x-6">
             <NavLink
               to="/movies"

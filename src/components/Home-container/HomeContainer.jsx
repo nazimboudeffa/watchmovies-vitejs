@@ -13,15 +13,15 @@ const HomeContainer = () => {
     videoElement.current.muted = muteState;
   };
   return (
-    <section className="w-screen h-screen">
-      <video autoPlay={true} ref={videoElement} playsInline muted loop className="absolute top-0 left-0 w-full h-full z-[-1]">
+    <section>
+      <video autoPlay={true} ref={videoElement} playsInline muted loop className="w-full h-full z-[-1]">
         <source
           src="https://res.cloudinary.com/daemrjn5v/video/upload/v1686775948/videos/Charlie_Chaplin_-_Modern_Times_Trailer_ykawjd.mp4"
           type="video/mp4" />
       </video>
 
-      <div className="absolute z-[-1]">
-        <div className="mt-8 ml-3">
+      <div className="absolute top-0 mt-[calc(5rem+3rem)] ml-7">
+        <div className="w-100">
           <img
             src="https://res.cloudinary.com/daemrjn5v/image/upload/v1686776512/posters/Charlie_Chaplin_-_Modern_Times_h0ojon.jpg"
             alt="modern-times" />
@@ -33,7 +33,7 @@ const HomeContainer = () => {
               <span className="font-ex-sm">13+</span>
             </button>
           </div>
-          <p className="movie-desc text-white ">
+          <p className="text-white ">
             Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker in this wonderful almost completely silent comedy.
           </p>
           <div className="flex flex-row gap">
