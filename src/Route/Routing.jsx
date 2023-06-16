@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mockman from "mockman-js";
-import { NotFound, Navbar } from "../components";
+import { NotFound} from "../components";
 
 import {
   HistoryPage,
@@ -22,6 +22,8 @@ import {
   ToastContextData
 } from "../contexts/index";
 
+import { Navbar2 } from "../components/Navbar/Navbar2";
+
 const Routing = () => {
   return (
     <>
@@ -32,7 +34,7 @@ const Routing = () => {
               <VideoDescriptionData>
                 <VideoData>
                   <WatchLaterData>
-                    <Navbar />
+                    <Navbar2 />
                     <Routes>
                       <Route path="/mockman" element={<Mockman />} />
                       <Route 
