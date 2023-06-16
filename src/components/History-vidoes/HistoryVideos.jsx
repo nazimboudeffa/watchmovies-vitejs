@@ -82,7 +82,7 @@ const HistoryVideos = () => {
         <>
           <div className="flex flex-column flex-align-item-center">
             <img
-              src="https://res.cloudinary.com/dwhsfh3sc/image/upload/v1649177969/zeplin-movies/movie-assets-imgs/watchhistory_cpdmcz.png"
+              src="undraw_Playlist_re_1oed.png"
               alt="watch-history"
               className="likevideo-404"
             />

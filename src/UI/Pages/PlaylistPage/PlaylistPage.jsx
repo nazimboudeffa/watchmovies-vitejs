@@ -39,7 +39,7 @@ const PlaylistPage = () => {
           <>
             <div className="img-center mb-3">
               <img
-                src="https://res.cloudinary.com/dwhsfh3sc/image/upload/v1650210301/zeplin-movies/movie-assets-imgs/playlist-removebg-preview_u1g9iu.png"
+                src="undraw_video_files_fu10.png"
                 alt="No-likes-video-found"
                 className="playlist-img"
               />
