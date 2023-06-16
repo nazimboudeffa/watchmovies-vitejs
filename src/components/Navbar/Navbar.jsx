@@ -49,7 +49,7 @@ const Navbar = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
 
       <nav
-        className={`flex justify-between px-10 py-5 items-center bg-zinc-500 sticky top-0 z-10 ${navbarStyle}`}
+        className={`flex justify-between px-10 py-5 items-center bg-tranparent sticky top-0 right-0 left-0 z-90 ${navbarStyle}`}
       >
 
         <NavLink
@@ -60,11 +60,11 @@ const Navbar = () => {
               : "inactives list-style-none"
           }
         >
-          <h1 class="text-xl text-white font-bold">Bled+</h1>
+          <h1 class="text-xl text-zinc-300 font-bold">Bled+</h1>
         </NavLink>
 
 
-        <div className="flex items-center text-white">
+        <div className="flex items-center text-zinc-300">
           <ul className="flex items-center  space-x-6">
             <NavLink
               to="/movies"
