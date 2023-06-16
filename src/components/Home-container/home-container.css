@@ -4,7 +4,6 @@
   --btn-bg: rgba(37, 36, 36, 0.493);
 }
 .header {
-  background-color: var(--col-black);
   height: 110vh;
   min-height: 25rem;
   width: 100%;
@@ -22,6 +21,7 @@
   z-index: 1;
 }
 
+/*
 video {
   position: absolute;
   top: 50%;
@@ -30,7 +30,7 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
+  z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -38,6 +38,7 @@ video {
   background-size: cover;
 }
 
+*/
 .video-img-title {
   max-width: 20.625rem;
   margin-top: 9.375rem;
@@ -46,7 +47,7 @@ video {
 
 .movie-info {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 .text-white {

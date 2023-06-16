@@ -1,6 +1,6 @@
 import React from "react";
 import "./videolistingpage.css";
-import { VideoListing } from "../../../components/";
+import { VideoListing, MustWatch } from "../../../components/";
 import { moviesDataFetcher } from "../../../utils/movies-data-fetcher";
 import { Toaster } from "react-hot-toast";
 
@@ -83,6 +83,21 @@ const VideoListingPage = () => {
         <section>
           <div className="flex flex-wrap gap pb-3 flex-justify-center">
             <VideoListing VIDEOS={filterVideos(videos)(videoCategory)} />
+          </div>
+        </section>
+        <section className="mt-3">
+          <div className="pt-3">
+            <div className="flex flex-between">
+              <div>
+                <span className="font-bold label-text label-text-dark">
+                  Mustwatch
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap pb-3 flex-justify-center mt-2">
+            <MustWatch />
           </div>
         </section>
       </main>
