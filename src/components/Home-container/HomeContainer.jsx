@@ -13,7 +13,7 @@ const HomeContainer = () => {
     videoElement.current.muted = muteState;
   };
   return (
-    <section className="h-screen mb-7">
+    <section className="w-screen h-screen">
       <video autoPlay={true} ref={videoElement} playsInline muted loop className="absolute top-0 left-0 w-100 h-100 z-[-1]">
         <source
           src="https://res.cloudinary.com/daemrjn5v/video/upload/v1686775948/videos/Charlie_Chaplin_-_Modern_Times_Trailer_ykawjd.mp4"
@@ -21,22 +21,21 @@ const HomeContainer = () => {
         />
       </video>
 
-      <div className="movie-info  w-50">
-        <div className="movie-img ">
+      <div className="absolute z-[-1]">
+        <div className="mt-8 ml-3">
           <img
-            className="video-img-title"
             src="https://res.cloudinary.com/daemrjn5v/image/upload/v1686776512/posters/Charlie_Chaplin_-_Modern_Times_h0ojon.jpg"
             alt="modern-times"
           />
         </div>
-        <div className="mt-2 ml-3  flex flex-column gap font-white">
+        <div className="mt-2 ml-3 flex flex-col gap-3 text-white">
           <div className="flex flex-row flex-align-item-center flex-justify-item-center gap">
-            <h1 className="font-white font-bold font-sm">Modern Times</h1>
+            <h1 className="text-white font-bold font-sm">Modern Times</h1>
             <button className=" pl-04 pr-04 pt-03 pb-03 movie-rating-btn">
               <span className="font-ex-sm">13+</span>
             </button>
           </div>
-          <p className="movie-desc font-white ">
+          <p className="movie-desc text-white ">
           Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker in this wonderful almost completely silent comedy.
           </p>
           <div className="flex flex-row gap">
