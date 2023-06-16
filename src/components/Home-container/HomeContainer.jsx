@@ -13,9 +13,8 @@ const HomeContainer = () => {
     videoElement.current.muted = muteState;
   };
   return (
-    <section className="header">
-      <div className="overlay"></div>
-      <video autoPlay={true} ref={videoElement} playsInline muted loop>
+    <section className="h-screen mb-7">
+      <video autoPlay={true} ref={videoElement} playsInline muted loop className="absolute top-0 left-0 w-100 h-100 z-[-1]">
         <source
           src="https://res.cloudinary.com/daemrjn5v/video/upload/v1686775948/videos/Charlie_Chaplin_-_Modern_Times_Trailer_ykawjd.mp4"
           type="video/mp4"
