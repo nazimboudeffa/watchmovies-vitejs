@@ -41,7 +41,7 @@ const Footer = () => {
                 
                 <li>
                   <a
-                    href="/"
+                    href="https://github.com/nazimboudeffa/watchmovies-vitejs"
                     rel="noreferrer"
                     target="_blank"
                     className="text-gray-700 transition hover:opacity-75"
