@@ -29,24 +29,27 @@ const HomeContainer = () => {
         <div className="mt-5 flex flex-col gap-3 text-white">
           <div className="flex flex-row gap-3">
             <h1 className="font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Modern Times</h1>
-            <div className="rounded-md border border-white p-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
+            <div className="rounded-md border border-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
           </div>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-50">
-            Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker in this wonderful almost completely silent comedy.
+          <p className="text-left w-40 md:w-80 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker ...
           </p>
           <div className="flex flex-row gap-3">
-            <button
-              className="play-btn btn btn-sm flex flex-align-item-center"
-              title="Feature not available "
-            >
-              <span className="material-icons pr-02">play_arrow</span>
-              <span>Play</span>
-            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 sm:w-16">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+            </svg>
 
             <div className="badge" onClick={toggleVideoMute}>
-              <span className="material-icons icon-badge badge-status-shadow">
-                {muteState ? "volume_off" : "volume_up"}
-              </span>
+              {muteState ? 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 sm:w-16">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z" />
+              </svg>
+              :
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 sm:w-16">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+              </svg>
+              }
             </div>
           </div>
         </div>

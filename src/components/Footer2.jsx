@@ -11,7 +11,7 @@ const Footer2 = () => {
               </div>
       
               <p className="mt-4 max-w-xs text-gray-500">
-                We share videos totally legal but there will be ads.
+                We share videos legally but we will be running ads.
               </p>
       
               <ul className="mt-8 flex gap-6">
