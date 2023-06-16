@@ -29,7 +29,7 @@ const HomeContainer = () => {
         <div className="mt-5 flex flex-col gap-3 text-white">
           <div className="flex flex-row gap-3">
             <h1 className="font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Modern Times</h1>
-            <div className="border-red-500 border-solid rounded text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
+            <div className="rounded-md border border-white p-1 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
           </div>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-50">
             Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker in this wonderful almost completely silent comedy.
