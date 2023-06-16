@@ -80,18 +80,15 @@ const HistoryVideos = () => {
 
       {historyState?.historyVideos?.length === 0 && (
         <>
-          <div className="flex flex-column flex-align-item-center">
+          <div className="flex flex-column">
             <img
               src="undraw_Playlist_re_1oed.png"
               alt="watch-history"
               className="likevideo-404"
             />
 
-            <h1 className="mt-3">Wohhhoo.. You're Watch History is cleared</h1>
+            <h1 className="mt-3">Woohhhoo.. You're Watch history is cleared</h1>
 
-            <Link to="/movies" className="btn-primary btn btn-sm mt-3">
-              Home
-            </Link>
           </div>
         </>
       )}

@@ -44,9 +44,6 @@ const PlaylistPage = () => {
                 className="playlist-img"
               />
               <h1>oops.. No Playlist found</h1>
-              <Link to="/" className="btn-primary btn btn-sm mt-1 ">
-                Home
-              </Link>
             </div>
           </>
         )}
