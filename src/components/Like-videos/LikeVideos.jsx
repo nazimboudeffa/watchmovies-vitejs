@@ -83,7 +83,7 @@ const LikeVideos = () => {
         <>
           <div className="flex flex-column flex-align-item-center">
             <img
-              src="undraw_movie_night_re_9umk.png"
+              src="undraw_Movie_night_re_9umk.png"
               alt="No-likes-video-found"
               className="likevideo-404"
             />
