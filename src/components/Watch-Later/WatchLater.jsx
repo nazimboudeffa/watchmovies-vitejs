@@ -82,7 +82,7 @@ const WatchLater = () => {
 
       {watchLaterVideos.length === 0 && (
         <>
-          <div className="flex flex-column flex-align-item-center">
+          <div className="flex flex-column">
             <img
               src="undraw_home_cinema_l7yl.png"
               alt="watch-later"
@@ -91,9 +91,6 @@ const WatchLater = () => {
 
             <h1 className="mt-3">Your Watch later section is clear!</h1>
 
-            <Link to="/" className="btn-primary btn btn-sm mt-3">
-              Home
-            </Link>
           </div>
         </>
       )}

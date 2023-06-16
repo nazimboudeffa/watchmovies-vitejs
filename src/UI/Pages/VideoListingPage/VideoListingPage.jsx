@@ -1,6 +1,7 @@
 import React from "react";
 import "./videolistingpage.css";
-import { VideoListing, MustWatch } from "../../../components/";
+import { VideoListing2 } from "../../../components/VideoListing2";
+import { MustWatch } from "../../../components";
 import { moviesDataFetcher } from "../../../utils/movies-data-fetcher";
 import { Toaster } from "react-hot-toast";
 
@@ -45,6 +46,12 @@ const VideoListingPage = () => {
         <section className="flex flex-wrap gap-3 mb-3">
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
+            onClick={() => setVideoCategory("CLEAR_ALL")}
+          >
+            All
+          </button>
+          <button
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => {
               setVideoCategory("Sci-Fi");
             }}
@@ -73,31 +80,10 @@ const VideoListingPage = () => {
             Comedy
           </button>
 
-          <button
-            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
-            onClick={() => setVideoCategory("CLEAR_ALL")}
-          >
-            All Genre
-          </button>
         </section>
         <section>
-          <div className="flex flex-wrap gap-3 pb-3 justify-center">
-            <VideoListing VIDEOS={filterVideos(videos)(videoCategory)} />
-          </div>
-        </section>
-        <section className="mt-3">
-          <div className="pt-3">
-            <div className="flex flex-between">
-              <div>
-                <span className="font-bold label-text label-text-dark">
-                  Must watch
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap gap-3 pb-3 justify-center mt-2">
-            <MustWatch />
+          <div className="flex flex-wrap gap-3">
+            <VideoListing2 videos={filterVideos(videos)(videoCategory)} />
           </div>
         </section>
       </main>
