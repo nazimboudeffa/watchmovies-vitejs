@@ -42,42 +42,42 @@ const VideoListingPage = () => {
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
       <main className="mt-3">
-        <section className="video-lists-container flex flex-wrap gap-3">
+        <section className="flex flex-wrap gap-3 mb-3">
           <button
-            className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills "
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => {
               setVideoCategory("Sci-Fi");
             }}
           >
-            <span className="icon-pad-right">Sci-Fi </span>
+            Sci-Fi
           </button>
 
           <button
-            className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills"
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => setVideoCategory("Action")}
           >
-            <span className="icon-pad-right">Action </span>
+            Action
           </button>
 
           <button
-            className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills"
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => setVideoCategory("Drama")}
           >
-            <span className="icon-pad-right">Drama </span>
+            Drama
           </button>
 
           <button
-            className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills"
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => setVideoCategory("Comedy")}
           >
-            <span className="icon-pad-right">Comedy </span>
+            Comedy
           </button>
 
           <button
-            className="btn-outline-primary btn btn-sm btn-round-20  btn-py-1 pills"
+            className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => setVideoCategory("CLEAR_ALL")}
           >
-            <span className="icon-pad-right">All Genre</span>
+            All Genre
           </button>
         </section>
         <section>
