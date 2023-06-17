@@ -94,7 +94,7 @@ const VideoCard = ({ video }) => {
                 </div>
               </div>
               <div className="mt-4 mr-1">
-                <span className="text-md">{video.types?.join()}</span>
+                {video.types?.map((type) => {return (<span className="rounded-xl border-2 border-zinc-900 bg-zinc-900 p-1 text-xs mr-1">{type}</span>)})}
               </div>
             </div>
             <div className="flex justify-center pt-3 mt-1">
