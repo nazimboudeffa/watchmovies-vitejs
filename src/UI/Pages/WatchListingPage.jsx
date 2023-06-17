@@ -49,7 +49,7 @@ const WatchListingPage = () => {
     <hr/>
     
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
-        <span className="text-2xl font-bold text-center">Tv Shows</span>
+        <span className="text-2xl font-bold text-center">TV Shows</span>
         <Link to="/movies">
         <span className="text-2xl font-bold text-center underline">More</span>
         </Link>
