@@ -5,7 +5,7 @@ import { addwatchLater, deletewatchLater, historyVideo } from "../utils";
 import { useWatchLaterData, useHistoryData } from "../hook";
 import { useToast } from "../contexts";
 
-const VideoCard = ({ video, key }) => {
+const VideoCard = ({ video }) => {
     const {
         watchLaterState: { watchLaterVideos },
         watchLaterDispatch,
@@ -40,8 +40,8 @@ const VideoCard = ({ video, key }) => {
         }
       };
     return (
-        <div className="bg-zinc-700 p-2 my-2 text-center text-white" key={key}>
-            <div className="relative flex">
+        <div className="bg-zinc-700 p-2 my-2 text-center text-white">
+            <div className="relative flex flex-col">
               <img
                 alt={video.title}
                 src={`https://images.weserv.nl/?url=${video.imgurl}`}
@@ -74,10 +74,11 @@ const VideoCard = ({ video, key }) => {
                 </span>
               )}
             </div>
-            <div className="flex flex-column pl-04 pt-1">
+            <div className="flex flex-col pl-04 pt-1">
               <div className="font-bold pt-3 w-full">{video.title}</div>
-              <div className="flex flox-row">
-                <span>{video.channelTitle}</span> | <span>{video.publishedAt}</span>
+              <div className="flex flox-row justify-between">
+                <span>{video.director}</span> 
+                <span>{video.publishedAt}</span>
               </div>
             </div>
             <div className="flex justify-between">
