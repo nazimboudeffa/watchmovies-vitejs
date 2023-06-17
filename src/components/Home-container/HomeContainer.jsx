@@ -33,7 +33,7 @@ const HomeContainer = () => {
             <div className="rounded-md border border-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">13+</div>
           </div>
           <p className="text-left w-40 md:w-80 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-            Masterpiece of Chaplin, great family comedy-drama while Charlie Chaplin portrays a factory worker ...
+            The film, which was set during the Great Depression, centres on a luckless factory worker ...
           </p>
           <div className="flex flex-row gap-3">
             <Link to="/watch/1">
