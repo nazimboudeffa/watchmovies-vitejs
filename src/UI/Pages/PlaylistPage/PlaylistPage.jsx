@@ -13,7 +13,7 @@ const PlaylistPage = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
 
       <main className="mt-3">
-        <section className="video-lists-container flex flex-wrap gap">
+        <section className="flex flex-wrap gap-1">
           <h1>
             {playlistState.length === 0
               ? `Playlist`
@@ -21,7 +21,7 @@ const PlaylistPage = () => {
           </h1>
         </section>
         <section>
-          <div className="flex flex-wrap gap pb-2 video-lists-container  mt-1 video-lists">
+          <div className="flex flex-wrap gap-1 pb-2 mt-1">
             {playlistState.length !== 0 &&
               playlistState.map((playlist, index) => {
                 return (
@@ -37,7 +37,7 @@ const PlaylistPage = () => {
 
         {playlistState.length === 0 && (
           <>
-            <div className="img-center mb-3">
+            <div className="flex flex-wrap justify-center">
               <img
                 src="undraw_video_files_fu10.png"
                 alt="No-likes-video-found"

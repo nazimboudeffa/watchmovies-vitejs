@@ -80,7 +80,7 @@ const HistoryVideos = () => {
 
       {historyState?.historyVideos?.length === 0 && (
         <>
-          <div className="flex flex-column">
+          <div className="flex flex-wrap justify-center">
             <img
               src="undraw_Playlist_re_1oed.png"
               alt="watch-history"
