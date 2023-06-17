@@ -9,7 +9,7 @@ const PlaylistMoviesPage = () => {
 
       <main className="mt-3">
         <section>
-          <div className="flex flex-wrap gap pb-3 video-lists-container  mt-1">
+          <div className="flex flex-wrap gap pb-3 video-lists-container mt-1">
             <MoviesList />
           </div>
         </section>

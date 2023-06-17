@@ -82,7 +82,7 @@ const WatchLater = () => {
 
       {watchLaterVideos.length === 0 && (
         <>
-          <div className="flex flex-column">
+          <div className="flex flex-wrap justify-center">
             <img
               src="undraw_home_cinema_l7yl.png"
               alt="watch-later"

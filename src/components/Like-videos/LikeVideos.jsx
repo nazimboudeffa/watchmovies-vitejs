@@ -81,7 +81,7 @@ const LikeVideos = () => {
 
       {likeVideoState.likedVideos.length === 0 && (
         <>
-          <div className="flex flex-column">
+          <div className="flex flex-wrap justify-center">
             <img
               src="undraw_Movie_night_re_9umk.png"
               alt="No-likes-video-found"
