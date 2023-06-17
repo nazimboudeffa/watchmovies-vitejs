@@ -83,7 +83,7 @@ const VideoListingPage = () => {
         </section>
         <section>
           <div className="flex flex-wrap gap-3">
-            <VideoListing2 videos={filterVideos(videos)(videoCategory)} />
+            <VideoListing2 videos={filterVideos(videos)(videoType)} />
           </div>
         </section>
       </main>
