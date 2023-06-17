@@ -96,8 +96,8 @@ const VideoDescription = () => {
         </div>
       </div>
       <hr />
-      <div className="flex flex-column justify-enter mt-1">
-        <h5 className="mb-1 text-sm">Description</h5>
+      <div className="justify-center mt-1">
+        <h5 className="mb-1 text-xl">Description</h5>
         <p className="mb-2">{movieDetail.description}</p>
       </div>
     </>

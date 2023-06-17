@@ -5,7 +5,7 @@ const VideoListing2 = ({ videos }) => {
     <>
       {videos?.map((video) => {
         return (
-          <VideoCard video={video} key={video._id} />
+          <VideoCard key={video._id} video={video} />
         );
       })}
     </>
