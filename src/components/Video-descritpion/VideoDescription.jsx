@@ -35,19 +35,20 @@ const VideoDescription = () => {
   console.log();
   return (
     <>
-      <div className="text-xl mt-7">
-        <h2>{movieDetail.title}</h2>
+      <div className="flex flex-col justify-center gap-2 text-xl mt-7">
+        <span>{movieDetail.title}</span>
+        <span>{movieDetail.actors}</span>
       </div>
-      <div className="mt-3 mb-3">
+      <div className="flex flex-row justify-between mt-3 mb-3">
         <div className="flex flex-row">
           <div className="flex flex-row gap-2">
-            <span className="text-sm ">
+            <span>
               {viewsFormatter(movieDetail.viewCount)}
             </span>
-            <span className="text-sm">views</span>
+            <span>views</span>
           </div>
         </div>
-        <div className="flex flex-row gap-3 mt-5">
+        <div className="flex flex-row gap-3">
           <div
             className="like flex flex-justify-center flex-align-item-center gap-1"
             onClick={() => {
