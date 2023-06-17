@@ -11,7 +11,8 @@ import {
   PlaylistPage,
   SingleVideoPage,
   VideoListingPage,
-  WatchLaterPage
+  WatchLaterPage,
+  WatchListingPage
 } from "../UI/Pages";
 import {
   VideoDescriptionData,
@@ -44,6 +45,10 @@ const Routing = () => {
                       <Route
                         path="/watch/:id"
                         element={<SingleVideoPage />}
+                      />
+                      <Route
+                        path="/watch"
+                        element={<WatchListingPage />}
                       />
                       <Route
                         path="/movies"
