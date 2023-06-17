@@ -53,44 +53,24 @@ const Carousel = ( {videos} ) => {
         <div className="flex justify-between absolute top left w-full h-full">
           <button
             onClick={movePrev}
-            className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+            className="hover:bg-zinc-900 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
             disabled={isDisabled('prev')}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-20 -ml-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
+
             <span className="sr-only">Prev</span>
           </button>
           <button
             onClick={moveNext}
-            className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+            className="hover:bg-zinc-900 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
             disabled={isDisabled('next')}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-20 -ml-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 5l7 7-7 7"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
+
             <span className="sr-only">Next</span>
           </button>
         </div>
