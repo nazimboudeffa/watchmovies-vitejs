@@ -12,6 +12,7 @@ const Footer2 = () => {
       
               <p className="mt-4 max-w-xs text-gray-500">
                 We share videos legally but we will be running ads.
+                This app is not designed for smartphones, you will have a better experience on large screens like on a PC.
               </p>
       
               <ul className="mt-8 flex gap-6">
@@ -74,7 +75,7 @@ const Footer2 = () => {
       
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75">
+                    <a href="/movies" className="text-gray-700 transition hover:opacity-75">
                       Movies
                     </a>
                   </li>
