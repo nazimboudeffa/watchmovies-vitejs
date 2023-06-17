@@ -13,8 +13,7 @@ const Footer2 = () => {
               </div>
       
               <p className="mt-4 max-w-xs text-gray-500">
-                We share videos legally but we will be running ads.
-                This app is not designed for smartphones, you will have a better experience on large screens like on a PC.
+                This app is not designed for smartphones, you will have a better experience on large screens like a PC.
               </p>
       
               <ul className="mt-8 flex gap-6">
