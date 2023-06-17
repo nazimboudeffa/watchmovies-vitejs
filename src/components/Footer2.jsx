@@ -94,12 +94,6 @@ const Footer2 = () => {
                     </a>
                   </li>
       
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75">
-                      Cartoons
-                    </a>
-                  </li>
-      
                 </ul>
               </div>
       

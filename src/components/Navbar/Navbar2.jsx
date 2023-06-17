@@ -61,7 +61,7 @@ const Navbar2 = () => {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
               <NavLink
-                to="/movies"
+                to="/watch"
                 className={({ isActive }) => (isActive ? "actives" : "inactives")}
               >
                 <li>

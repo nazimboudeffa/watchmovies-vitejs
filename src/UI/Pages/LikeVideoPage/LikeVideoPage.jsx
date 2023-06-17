@@ -12,11 +12,11 @@ const LikeVideoPage = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
 
       <main className="mt-3">
-        <section className="video-lists-container flex flex-wrap gap">
+        <section className="video-lists-container flex flex-wrap gap-1">
           <h1>You have {likeVideoState.likedVideos.length} Liked videos </h1>
         </section>
         <section>
-          <div className="flex flex-wrap gap pb-3 flex-justify-center">
+          <div className="flex flex-wrap gap-1 pb-3 justify-center">
             <LikeVideos />
           </div>
         </section>
