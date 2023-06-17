@@ -35,7 +35,7 @@ const VideoDescription = () => {
   console.log();
   return (
     <>
-      <div className="text-xl">
+      <div className="text-xl mt-7">
         <h2>{movieDetail.title}</h2>
       </div>
       <div className="mt-3 mb-3">

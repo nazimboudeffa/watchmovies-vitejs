@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ReactPlayer from 'react-player'
+import "./videoplayer.css";
 
 import { useSingleVideoData, useHistoryData } from "../../hook/";
 import { useToast } from "../../contexts";
@@ -20,19 +20,22 @@ const VideoPlayer = () => {
   };
 
   useEffect(() => {
-    console.log("movieDetail", movieDetail.videourl);
     if (movieDetail._id) {
       addVideoToHistory(movieDetail);
     }
   }, [addVideoToHistory]);
 
   return (
-    <ReactPlayer 
-      url={`${movieDetail.videourl}`} 
-      controls={true}
-      width="100%"
-      height="100%"
-    />
+    <div className="w-full h-full">
+      <iframe
+        className="w-full h-screen"
+        src={`https://www.youtube.com/embed/${watchId.id}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
   );
 };
 
