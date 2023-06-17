@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from 'better-react-carousel'
+import { Carousel } from '../../components/Carousel';
 import { moviesDataFetcher } from "../../utils/movies-data-fetcher";
 import { VideoCard } from "../../components/VideoCard";
 import { useEffect, useState } from "react";
@@ -33,15 +33,7 @@ const WatchListingPage = () => {
         </Link>
     </div>
     
-    <Carousel cols={4} rows={1} gap={10} loop>
-        {videos?.map((video) => {
-            return (
-                <Carousel.Item>
-                    <VideoCard key={video._id} video={video} />
-                </Carousel.Item>
-            );
-        })}
-    </Carousel>
+    <Carousel videos={videos} />
 
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
         <span className="text-2xl font-bold text-center">Series</span>
@@ -50,15 +42,7 @@ const WatchListingPage = () => {
         </Link>
     </div>
     
-    <Carousel cols={4} rows={1} gap={10} loop>
-        {videos?.map((video) => {
-            return (
-                <Carousel.Item>
-                    <VideoCard key={video._id} video={video} />
-                </Carousel.Item>
-            );
-        })}
-    </Carousel>
+    <Carousel videos={videos} />
 
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
         <span className="text-2xl font-bold text-center">Tv Shows</span>
@@ -67,15 +51,7 @@ const WatchListingPage = () => {
         </Link>
     </div>
     
-    <Carousel cols={4} rows={1} gap={10} loop>
-        {videos?.map((video) => {
-            return (
-                <Carousel.Item>
-                    <VideoCard key={video._id} video={video} />
-                </Carousel.Item>
-            );
-        })}
-    </Carousel>
+    <Carousel videos={videos} />
     </>
   );
 };
