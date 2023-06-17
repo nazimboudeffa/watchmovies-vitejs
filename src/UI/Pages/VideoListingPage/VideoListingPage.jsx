@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 const VideoListingPage = () => {
   const [videos, setVideos] = useState([]);
 
-  const [videoCategory, setVideoCategory] = useState(null);
+  const [videoType, setVideoType] = useState(null);
 
   const getMoviesData = async () => {
     try {
@@ -46,14 +46,14 @@ const VideoListingPage = () => {
         <section className="flex flex-wrap gap-3 mb-3">
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
-            onClick={() => setVideoCategory("CLEAR_ALL")}
+            onClick={() => setVideoType("CLEAR_ALL")}
           >
             All
           </button>
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
             onClick={() => {
-              setVideoCategory("Sci-Fi");
+              setVideoType("Sci-Fi");
             }}
           >
             Sci-Fi
@@ -61,21 +61,21 @@ const VideoListingPage = () => {
 
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
-            onClick={() => setVideoCategory("Action")}
+            onClick={() => setVideoType("Action")}
           >
             Action
           </button>
 
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
-            onClick={() => setVideoCategory("Drama")}
+            onClick={() => setVideoType("Drama")}
           >
             Drama
           </button>
 
           <button
             className="rounded-xl border-2 border-zinc-900 p-2 my-2 text-center hover:bg-zinc-900 hover:text-white"
-            onClick={() => setVideoCategory("Comedy")}
+            onClick={() => setVideoType("Comedy")}
           >
             Comedy
           </button>

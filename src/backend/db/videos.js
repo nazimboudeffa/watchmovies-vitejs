@@ -15,6 +15,7 @@ export const videos = [
     director: "Charlie Chaplin",
     actors: "Charlie Chaplin, Paulette Goddard, Henry Bergman, Tiny Sandford, Chester Conklin",
     types:["Comedy", "Drama"],
+    category: "Movie",
     description: "The film, which was set during the Great Depression, centres on a luckless factory worker (played by Chaplin) who finds himself so unnerved by trying to cope with the modern equipment he must operate that he suffers a breakdown. After being institutionalized, he is freed, only to be mistaken for a communist agitator."
   }
 ];
