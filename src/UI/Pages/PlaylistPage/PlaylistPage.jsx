@@ -37,11 +37,11 @@ const PlaylistPage = () => {
 
         {playlistState.length === 0 && (
           <>
-            <div className="flex flex-wrap justify-center">
+            <div className="justify-center">
               <img
                 src="undraw_video_files_fu10.png"
                 alt="No-likes-video-found"
-                className="playlist-img"
+                className="mx-auto"
               />
               <h1>oops.. No Playlist found</h1>
             </div>
