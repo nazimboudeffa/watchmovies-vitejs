@@ -29,7 +29,7 @@ const WatchListingPage = () => {
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
         <span className="text-2xl font-bold text-center">Movies</span>
         <Link to="/movies">
-        <span className="text-2xl font-bold text-center underline">See more</span>
+        <span className="text-2xl font-bold text-center underline">More</span>
         </Link>
     </div>
     
@@ -38,7 +38,7 @@ const WatchListingPage = () => {
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
         <span className="text-2xl font-bold text-center">Series</span>
         <Link to="/movies">
-        <span className="text-2xl font-bold text-center mt-3 underline">See more</span>
+        <span className="text-2xl font-bold text-center mt-3 underline">More</span>
         </Link>
     </div>
     
@@ -47,7 +47,7 @@ const WatchListingPage = () => {
     <div className="flex flex-row justify-between pl-5 pr-5 mt-3">
         <span className="text-2xl font-bold text-center">Tv Shows</span>
         <Link to="/movies">
-        <span className="text-2xl font-bold text-center underline">See more</span>
+        <span className="text-2xl font-bold text-center underline">More</span>
         </Link>
     </div>
     
